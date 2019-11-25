@@ -26,12 +26,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav>
+        <nav className="App-nav">
           <a onClick={() => this.changePage("about")}>About</a>
           <a onClick={() => this.changePage("dog")}>Dog</a>
           <a onClick={() => this.changePage("contact")}>Contact</a>
         </nav>
-        {this.renderPage()}
+        <div>{this.renderPage()}</div>
       </div>
     );
   }
