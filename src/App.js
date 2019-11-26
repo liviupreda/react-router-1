@@ -23,8 +23,10 @@ class App extends Component {
           </NavLink>
         </nav>
         <Switch>
+          {/* Component instantiates a new Component every time; use w/o props */}
           <Route exact path="/" component={About} />
-          <Route exact path="/dog" component={Dog} />
+          {/* Render will re-use the existing Component; use with props */}
+          <Route exact path="/dog" render={() => <Dog name="Muffins" />} />
           <Route exact path="/dog/hater" component={Hater} />
           <Route exact path="/contact" component={Contact} />
         </Switch>

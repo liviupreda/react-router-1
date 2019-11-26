@@ -5,6 +5,7 @@ class Dog extends Component {
     return (
       <div className="Dog">
         <h1>Dog</h1>
+        <h3>This dog is named: {this.props.name}</h3>
         <img
           alt="Dog"
           src="https://images.unsplash.com/photo-1500879747858-bb1845b61beb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
